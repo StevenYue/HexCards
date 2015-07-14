@@ -1,0 +1,88 @@
+<html>
+<head>
+<title>Game Rules</title>
+<style type="text/css" rel="stylesheet">
+body{
+	font-family:arial;	
+}
+h1{
+	text-align:center;
+}
+
+</style>
+
+</head>
+
+<body>
+<h1>Rules of HEX CARDS <em>beta</em></h1>
+<hr>
+<h3>Origination:</h3>
+<p>HEX cards is poker game I used to play when I was just a kid, so presumably the game was 
+originated
+at my hometown or the area around. As I remember, the game stayed on top of the poker game 
+list for quite a while.
+Adults gambled on it, and my dad and sister, we also played a lot, definitely a lot of fun,
+ ever lasting
+memory, I can still remember how I broke my sister's nose while playing it (Yes we didn't 
+gamble money, but 
+nose scratching). The memory is extremely sweet when you realize some has gone and some 
+become the mother. 
+What's more interesting is my girl loves this game even now (I am no longer a fun of poker game),
+So there are enough motivations for me to make this game, the beta version only supports 
+a few hard-coded logins, no database or whatnot. Basically it's to test all the functionalities 
+of both front and back (Don't get me wrong, it's still very playable.).
+ </p>
+ 
+<h3>How to Six Cards with real cards <em>(Will explain how to play on my incomprehensible UI in 
+later section)</em></h3>
+<p>You drew 6 cards per round, then divide into, 1, 2, 3 cards, bacsically for three hands of game.
+	<ol>
+		<li>Single Comparison: rules are simple, Rank(small to big): A,2,3...K.
+		  &nbsp;&nbsp;&nbsp; Suit(stob):Spade, heart,club, diamend. &nbsp;&nbsp;&nbsp;
+		  Joker equals a spade king</li>
+		
+		<li>TenHalf: Number cards(as opposed to face cards) equals to their ranks, all face cards
+			are considered as a half. The goal of this game is to get a sum as close as ten half 
+			and it also has to be smaller than ten half(Very important rule, will be mentioned a
+			lot). Joker can be treated as any card for the best interest of this hand(always as 
+			a spade).
+			<p>what if sums are equal:</p>
+			<ul>
+				<li>Sum == 10.5: simply, compare the suit of 10, as always, spade->
+				heart->club->diamond. Tie if suit is also the same</li>
+				<li>Sum <= 10.0: 
+					<ul>
+						<li>Combination of two ranks are not the same: (9+1 > 7+3)
+						(7+2 > 5+4) (8+2 > 7+3), Hope you could figure out from these 
+						examples</li>
+						<li>Combination of two ranks are the same: compare the suit of the 
+						card with a larger rank. </li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+		
+		<li>Tuo La Ji (Tractor is literal meaning, however this type of comb is called
+		straight). 
+			<ul>
+				<li>Type of card: (Bomb: three are the same), (Straight: three consecutive
+				ranks, A,2,3 and Q,K,A included),
+				(Flush:not bomb nor straight, all three have the same suit),
+				(Pair: not the above three),(high card)</li>
+				<li>rule: Bomb > straight > Flush > Pair > high card</li>
+				<li>Ace is considered the biggest rank, 2 smallest</li>
+				<li>Joker as always can play any card for the best benefit of that hand</li>
+				<li>Dive In:
+					<ul>
+						<li>Bomb: Flushing bomb swallows regular ones regardless of rank,
+								for none flushing bombs just compare ranks</li>
+						<li>Straight: Flushing ones are winner of regular ones, </li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+	</ol>
+</p>
+
+</body>
+<html>

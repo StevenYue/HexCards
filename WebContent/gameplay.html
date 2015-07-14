@@ -1,0 +1,85 @@
+<html>
+<head>
+<title>HEX Cards</title>
+
+	<link type="text/css" rel="stylesheet" href="gameplay.css"/>
+	<link type="text/css" rel="stylesheet" href="jquery-ui/jquery-ui.css"/>
+	<script src="jquery-1.11.3.js"></script>
+	<script src="gameplay.js"></script>
+	<script src="jquery-ui/jquery-ui.min.js"></script>
+</head>
+
+<body>
+	<div id="wrapper">
+	
+	<div id="rightDiv">
+		<label>Players Online</label>
+		
+		<ul id="userList">
+			
+		</ul>
+		<!--<select id="userList">
+		</select>-->
+		<label>Rooms List</label>
+		
+		<ul id="roomList">
+			<li id="room1">Room 1</li>
+			<li id="room2">Room 2</li>
+			<li id="room3">Room 3</li>
+			<li id="room4">Room 4</li>
+			<li id="room5">Room 5</li>
+		</ul>
+		
+		
+		<br>
+		<div class="cardBack" id="leftOver">DRAW</div>
+	
+		</br>
+		<textarea rows="7" cols = "25" id="msgWindow" disabled>
+		</textarea>
+	</div>
+
+
+	<div id="gameTitle">
+		<strong id="yourID"></strong>
+	
+		STATS
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<span>Yours:</span>
+		
+		<span id="yourstats">0</span>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<span id="herID">Hers:</span>
+		
+		<span id="herstats">0</span>
+		
+	<div>
+
+	<div id="middleDiv">
+		<ul id="Hand">
+			<li class="cardVoid" id="cv1"></li>
+			<li class="cardVOid" id="cv2"></li>
+			<li class="cardVoid" id="cv3"></li>
+			<li class="VS" id="vs">VS</li>
+			<li class="cardVoid" id="cv4"></li>
+			<li class="cardVoid" id="cv5"></li>
+			<li class="cardVoid" id="cv6"></li>
+		</ul>
+	</div>
+	
+	<div id="bottomDiv">
+		<div class="cardHolder" id="yourcard1"></div>
+		<div class="cardHolder" id="yourcard2"></div>
+		<div class="cardHolder" id="yourcard3"></div>
+		<div class="cardHolder" id="yourcard4"></div>
+		<div class="cardHolder" id="yourcard5"></div>
+		<div class="cardHolder" id="yourcard6"></div>
+		<button id="startButton">START</button>
+	</div>
+	
+	</div>
+
+</body>
+
+
+</html>

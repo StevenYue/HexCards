@@ -1,0 +1,157 @@
+body{
+	background: #50a3a2;
+	background: -webkit-linear-gradient(top left, #50a3a2 0%, #53e3a6 100%);
+	background: linear-gradient(to bottom right, #50a3a2 0%, #53e3a6 100%);
+	overflow: hidden;
+}
+
+.VS{
+	width:50px;
+	height:50px;
+	font-family:Arial;
+	text-align:center;
+	display: table-cell;
+	vertical-align:middle;
+	font-style: italic;
+	font-size:50; 
+	padding:10px;
+}
+
+.VS:hover{
+	color:red;
+	cursor: pointer;
+}
+
+.cardBack{
+	height:134px;
+	width:96px;
+	border:3px solid black;
+	border-radius:10px;
+	background-color: #66FF33;
+	margin: auto;
+	text-align: center;
+}
+.cardBack:hover{
+	border:3px solid red;
+	cursor: pointer;
+}
+
+.cardVoid{
+	height:168px;
+	width:120px;
+	display: table-cell;
+	border-radius:10px;
+}
+.cardHolder{
+	height:168px;
+	width:120px;
+	display: table-cell;
+	border:1px solid black;
+	border-radius:10px;
+}
+.cardHolder:hover{
+	border:3px solid red;
+	cursor: pointer;
+}
+.card{
+	height:168px;
+	width:120px;
+	background-image:url("img/1h.png");
+	background-size:120px 168px; /*:width height*/
+	text-align:center;
+	display: table-cell;
+}
+.card:hover{
+	border:3px solid red;
+	cursor: pointer;
+}
+
+
+
+
+
+#wrapper {
+   min-height:100%;
+   position:relative;
+}
+
+
+#gameTitle{
+	width:80%;
+	height:26px;
+	font-family:Verdana;
+	font-size:20px;
+	border-radius:10px;
+	text-align:center;
+	background-color:#6699FF;
+}
+#middleDiv{
+	width:80%;
+	height:64%;
+	text-align:center;
+	padding-bottom:30%;   /* Height of the footer */
+	padding-top:6%;
+}
+#bottomDiv{
+	position:absolute;
+	bottom:0;
+	width:100%;
+	height:30%   /* Height of the footer */
+}
+
+#rightDiv{
+	float:right;
+	margin-right:30px;
+}
+
+#startButton{
+	height:50px;
+	width:120px;
+	font-size:30px;
+	border:3px solid black;
+	border-radius:5px;
+	float:right;
+	margin-top:-50px;
+	margin-right:25px;
+}
+#startButton:hover{
+	border:3px solid red;
+	cursor:pointer;
+}
+
+#yourID{
+	float: left;
+	margin-left: 20px;
+}
+
+
+label {
+	font-family:arial;
+    display: block;
+    margin: 5px 0 0 0;
+	text-align:center;
+}
+
+
+#roomList,#userList{
+	background-color: #FFFFFF;
+	width: 180px;
+    height: 90px;
+    line-height: 16px;
+    border: 1px solid #ccc;
+    padding: 0;
+    margin: 0;
+    overflow: scroll;
+    overflow-x: hidden;
+	margin:auto;
+}
+
+#roomList li,#userList  li{
+	border-top: 1px solid #000000;
+}
+#roomList li:hover{
+	color: red;
+	cursor:pointer;
+	font-weight: bold;
+}
+
